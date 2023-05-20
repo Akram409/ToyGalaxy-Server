@@ -1,0 +1,183 @@
+[
+    {
+      "category_name": "Marvel",
+      "img": "https://i.ibb.co/SrnsJk3/1e83417c22109ff192e5359ad4d54ae0.jpg",
+      "name": "Iron Man",
+      "price": "$19.99",
+      "rating": 4.5,
+      "seller": "William's Wonders",
+      "quantity": 10
+    },
+    {
+      "category_name": "Marvel",
+      "img": "https://i.ibb.co/k8YSSRf/28aebdcd097dd79845894c355fb184b4.jpg",
+      "name": "Spider-Man",
+      "price": "$24.99",
+      "rating": 4.2,
+      "seller": "Isabella's Interstellar Shop",
+      "quantity": 8
+    },
+    {
+      "category_name": "Marvel",
+      "img": "https://i.ibb.co/WV2BZRs/5929954.jpg",
+      "name": "Hulk",
+      "price": "$29.99",
+      "rating": 4.8,
+      "seller": "James's Jedi Emporium",
+      "quantity": 5
+    },
+    {
+      "category_name": "Marvel",
+      "img": "https://i.ibb.co/QQWFh4f/H2fea5fd60845406697bb64ecab2d45dd-M-jpg-640x640-Q90-jpg.webp",
+      "name": "Black Widow",
+      "price": "$22.99",
+      "rating": 4.4,
+      "seller": "Charlotte's Star Shop",
+      "quantity": 12
+    },
+    {
+      "category_name": "Avenger",
+      "img": "https://i.ibb.co/yYfPVLQ/1042914447-b1a96d68-3db1-47d6-8f6a-6ae55b804f2d-1224-1224-jpg-1.jpg",
+      "name": "Thor",
+      "price": "$19.99",
+      "rating": 4.5,
+      "seller": "Liam's Transformers Store",
+      "quantity": 3
+    },
+    {
+      "category_name": "Avenger",
+      "img": "https://i.ibb.co/Pgrgt4S/clf47wwin001nmh08aqvomr5k-1.jpg",
+      "name": "Captain America",
+      "price": "$24.99",
+      "rating": 4.3,
+      "seller": "Mia's Mech Emporium",
+      "quantity": 7
+    },
+    {
+      "category_name": "Avenger",
+      "img": "https://i.ibb.co/Msdx8v0/images.jpg",
+      "name": "Black Panther",
+      "price": "$29.99",
+      "rating": 4.8,
+      "seller": "Noah's Robo Shop",
+      "quantity": 4
+    },
+    {
+      "category_name": "Avenger",
+      "img": "https://i.ibb.co/Cmw4H8M/6342f469-fd16-47fe-aab7-fadffbabd426.jpg",
+      "name": "Doctor Strange",
+      "price": "$27.99",
+      "rating": 4.6,
+      "seller": "Sophie's Cybertron Corner",
+      "quantity": 9
+    },
+    {
+      "category_name": "StarWar",
+      "img": "https://i.ibb.co/stLKyDR/IMG-20230519-195648.jpg",
+      "name": "Luke Skywalker",
+      "price": "$19.99",
+      "rating": 4.2,
+      "seller": "Alexander's Action Figures",
+      "quantity": 6
+    },
+    {
+      "category_name": "StarWar",
+      "img": "https://i.ibb.co/ByGVgjh/HD-wallpaper-darth-vader-gear-legends-metal-space-star-strike-trooper-troopers-war-wars.jpg",
+      "name": "Darth Vader",
+      "price": "$29.99",
+      "rating": 4.7,
+      "seller": "Emily's Exo-Planet Emporium",
+      "quantity": 11
+    },
+    {
+      "category_name": "StarWar",
+      "img": "https://i.ibb.co/YNfnrKq/405c1f78-b658-424f-8101-16bc53348183-1-aa71a69cfdd26893983dac0c1e670056.webp",
+      "name": "Yoda",
+      "price": "$24.99",
+      "rating": 4.4,
+      "seller": "Benjamin's Battle Bots",
+      "quantity": 2
+    },
+    {
+      "category_name": "StarWar",
+      "img": "https://i.ibb.co/bKb9mG0/41gf9q-Oa-WHL-AC-SL1500.jpg",
+      "name": "Princess Leia",
+      "price": "$22.99",
+      "rating": 4.1,
+      "seller": "Ava's Astro Mall",
+      "quantity": 14
+    },
+    {
+      "category_name": "Transformer",
+      "img": "https://i.ibb.co/MNKF8Pm/TLK-Optimus-Prime-art.jpg",
+      "name": "Optimus Prime",
+      "price": "$19.99",
+      "rating": 4.6,
+      "seller": "William's Wonders",
+      "quantity": 7
+    },
+    {
+      "category_name": "Transformer",
+      "img": "https://i.ibb.co/DpFf0vV/images-1.jpg",
+      "name": "Bumblebee",
+      "price": "$24.99",
+      "rating": 4.3,
+      "seller": "Isabella's Interstellar Shop",
+      "quantity": 9
+    },
+    {
+      "category_name": "Transformer",
+      "img": "https://i.ibb.co/YNfnrKq/405c1f78-b658-424f-8101-16bc53348183-1-aa71a69cfdd26893983dac0c1e670056.webp",
+      "name": "Megatron",
+      "price": "$29.99",
+      "rating": 4.7,
+      "seller": "James's Jedi Emporium",
+      "quantity": 5
+    },
+    {
+      "category_name": "Transformer",
+      "img": "https://i.ibb.co/cwqg7sj/cb74ac5ec6c93382671a4ef19d4ce5651878c29c.jpg",
+      "name": "Starscream",
+      "price": "$25.99",
+      "rating": 4.5,
+      "seller": "Charlotte's Star Shop",
+      "quantity": 3
+    },
+    {
+      "category_name": "Marvel",
+      "img": "https://i.ibb.co/Xb7PscG/thor.jpg",
+      "name": "Thor",
+      "price": "$29.99",
+      "rating": 4.5,
+      "seller": "Liam's Transformers Store",
+      "quantity": 6
+    },
+    {
+      "category_name": "Marvel",
+      "img": "https://i.ibb.co/5TJ9L7r/spiderman1.jpg",
+      "name": "Spider-Man",
+      "price": "$24.99",
+      "rating": 4.2,
+      "seller": "Mia's Mech Emporium",
+      "quantity": 4
+    },
+    {
+      "category_name": "Transformer",
+      "img": "https://i.ibb.co/K6yRk5p/transformer-1.jpg",
+      "name": "Transformer",
+      "price": "$39.99",
+      "rating": 3.1,
+      "seller": "Noah's Robo Shop",
+      "quantity": 2
+    },
+    {
+      "category_name": "Marvel",
+      "img": "https://i.ibb.co/hfgKDPf/ironman.jpg",
+      "name": "Iron Man",
+      "price": "$49.99",
+      "rating": 4.1,
+      "seller": "Sophie's Cybertron Corner",
+      "quantity": 8
+    }
+  ]
+  
