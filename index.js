@@ -26,10 +26,10 @@ async function run() {
     const allToysCollection = database.collection("AllToys");
 
     // Searching Indexing
-    const indexKeys = { name: 1, seller: 1 };
-    const indexOptions = { name: "toySeller" };
-    const result = await allToysCollection.createIndex(indexKeys, indexOptions);
-    console.log(result);
+    // const indexKeys = { name: 1, seller: 1 };
+    // const indexOptions = { name: "toySeller" };
+    // const result = await allToysCollection.createIndex(indexKeys, indexOptions);
+    // console.log(result);
 
     // AllToy Collection
     app.get("/allToys", async (req, res) => {
