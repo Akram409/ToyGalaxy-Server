@@ -22,7 +22,6 @@ const client = new MongoClient(uri, {
 async function run() {
   try {
     // await client.connect();
-
     const database = client.db("toyGalaxy");
     const allToysCollection = database.collection("AllToys");
 
@@ -36,7 +35,7 @@ async function run() {
     app.get("/allToys", async (req, res) => {
       const page = parseInt(req.query.page || 0);
       const limit = parseInt(req.query.limit || 20);
-      const skip = page * limit;  
+      const skip = page * limit;
 
       const result = await allToysCollection
         .find()
@@ -59,7 +58,7 @@ async function run() {
       res.send(result);
     });
 
-   app.get("/shopByCategory/:name", async (req, res) => {
+    app.get("/shopByCategory/:name", async (req, res) => {
       const name = req.params.name;
       const limit = parseInt(req.query.limit || 4);
       const query = { category_name: name };
@@ -86,13 +85,13 @@ async function run() {
       res.send(result);
     });
 
-    app.post('/addToys',async(req,res) =>{
-      const item = req.body
-      const result = await allToysCollection.insertOne(item)
-      res.send(result)
-    })
+    app.post("/addToys", async (req, res) => {
+      const item = req.body;
+      const result = await allToysCollection.insertOne(item);
+      res.send(result);
+    });
 
-    app.get("/myToys/:text", async(req, res) => {
+    app.get("/myToys/:text", async (req, res) => {
       const text = req.params.text;
       const query = { seller_email: text };
       const page = parseInt(req.query.page || 0);
@@ -110,41 +109,45 @@ async function run() {
         .skip(skip)
         .limit(limit)
         .toArray();
-        result.forEach((item) => {
-          const price = item.price.replace("$", "");
-          item.price = parseFloat(price);
-        });
-        res.send({ totalToys: totalCount, toys: result });
+      result.forEach((item) => {
+        const price = item.price.replace("$", "");
+        item.price = parseFloat(price);
+      });
+      res.send({ totalToys: totalCount, toys: result });
     });
 
-    app.put('/updateToys/:id' , async(req,res) =>{
-      const id = req.params.id
-      const user = req.body
+    app.put("/updateToys/:id", async (req, res) => {
+      const id = req.params.id;
+      const user = req.body;
 
-      const filter = {_id : new ObjectId(id)}
+      const filter = { _id: new ObjectId(id) };
       const options = { upsert: true };
-      const updateToy ={
-        $set : {
+      const updateToy = {
+        $set: {
           img: user.img,
-          name : user.name,
+          name: user.name,
           price: user.price,
           rating: user.rating,
           seller: user.seller,
           seller_email: user.seller_email,
           description: user.description,
-          quantity: user.quantity
-        }
-      }
-      const result = await allToysCollection.updateOne(filter,updateToy,options)
-      res.send(result)
-    })
+          quantity: user.quantity,
+        },
+      };
+      const result = await allToysCollection.updateOne(
+        filter,
+        updateToy,
+        options
+      );
+      res.send(result);
+    });
 
-    app.delete('/deleteToy/:id' , async(req,res) =>{
-      const id = req.params.id
-      const query = {_id : new ObjectId(id)}
-      const result = await allToysCollection.deleteOne(query)
-      res.send(result)
-    })
+    app.delete("/deleteToy/:id", async (req, res) => {
+      const id = req.params.id;
+      const query = { _id: new ObjectId(id) };
+      const result = await allToysCollection.deleteOne(query);
+      res.send(result);
+    });
 
     await client.db("admin").command({ ping: 1 });
     console.log(
